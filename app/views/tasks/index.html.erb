@@ -4,7 +4,8 @@
   <p>
     <!-- 以下の2行のコードを追加 -->
     <%= task.title %>
-    <%= link_to "詳細", task_path(task.id), method: :get %>
+    <%= link_to "詳細", task_path(task), method: :get %>
     <%# <%= task.contents %>
+    <%= link_to "編集", edit_task_path(task), method: :get %>
   </p>
 <% end %>
