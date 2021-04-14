@@ -4,6 +4,7 @@
   <p>
     <!-- 以下の2行のコードを追加 -->
     <%= task.title %>
+    <%= link_to "詳細", task_path(task.id), method: :get %>
     <%# <%= task.contents %>
   </p>
 <% end %>
